@@ -53,50 +53,27 @@ Options:
 
     [--reads1 (STRING)]           [Required by "reads"] The suffix name of reads 1 ( for example: if the name of reads 1 is "YBT-1520_L1_I050.R1.clean.fastq.gz", "YBT-1520" is the strain same, so the suffix name should be ".R1.clean.fastq.gz" )
 
-    [--reads2 (STRING)]           [Required by "reads"] The suffix name of
-                                  reads 2( not required by "oxford" and
-                                  "pacbio". For example: if the name of
-                                  reads 2 is "YBT-1520_2.fq", the suffix
-                                  name should be _2.fq" )
+    [--reads2 (STRING)]           [Required by "reads"] The suffix name of reads 2( not required by "oxford" and "pacbio". For example: if the name of reads 2 is "YBT-1520_2.fq", the suffix name should be _2.fq" )
 
-    [--suffix_len (INT)]          [Required by "reads"] (Strongly
-                                  recommended) The suffix length of the
-                                  reads file, that is the length of the
-                                  reads name minus the length of the strain
-                                  name. For example the --suffix_len of
-                                  "YBT-1520_L1_I050.R1.clean.fastq.gz" is 26
-                                  ( "YBT-1520" is the strain name ) (
-                                  Default 0 )
+    [--suffix_len (INT)]          [Required by "reads"] (Strongly recommended) The suffix length of the reads file, that is the length of the reads name minus the length of the strain name. For example the --suffix_len of
+                                  "YBT-1520_L1_I050.R1.clean.fastq.gz" is 26 ( "YBT-1520" is the strain name ) ( Default 0 )
 
-    [--short1 (STRING)]           [Required] FASTQ file of first short reads
-                                  in each pair. Needed by hybrid assembly (
-                                  Default Unset )
+    [--short1 (STRING)]           [Required] FASTQ file of first short reads in each pair. Needed by hybrid assembly ( Default Unset )
 
-    [--short2 (STRING)]           [Required] FASTQ file of second short
-                                  reads in each pair. Needed by hybrid
-                                  assembly ( Default Unset )
+    [--short2 (STRING)]           [Required] FASTQ file of second short reads in each pair. Needed by hybrid assembly ( Default Unset )
 
-    [--long (STRING)]             [Required] FASTQ or FASTA file of long
-                                  reads. Needed by hybrid assembly ( Default
-                                  Unset )
+    [--long (STRING)]             [Required] FASTQ or FASTA file of long reads. Needed by hybrid assembly ( Default Unset )
 
-    [--hout (STRING)]             [Required] Output directory for hybrid
-                                  assembly ( Default
-                                  ../../Results/Assembles/Hybrid )
+    [--hout (STRING)]             [Required] Output directory for hybrid assembly ( Default "../../Results/Assembles/Hybrid" )
 
-    [--genomeSize (STRING)]       [Required] An estimate of the size of the
-                                  genome. Common suffixes are allowed, for
-                                  example, 3.7m or 2.8g. Needed by PacBio
-                                  data and Oxford data ( Default 6.07m )
+    [--genomeSize (STRING)]       [Required] An estimate of the size of the genome. Common suffixes are allowed, for example, 3.7m or 2.8g. Needed by PacBio data and Oxford data ( Default 6.07m )
 
-    [--Scaf_suffix (STRING)]      The suffix of scaffolds or genomes (
-                                  Default ".filtered.fas" )
+    [--Scaf_suffix (STRING)]      The suffix of scaffolds or genomes ( Default ".filtered.fas" )
 
-    [--orfs_suffix (STRING)]      The suffix of orfs files ( Default ".ffn"
-                                  )
+    [--orfs_suffix (STRING)]      The suffix of orfs files ( Default ".ffn" )
 
-    [--prot_suffix (STRING)]      The suffix of protein files ( Default
-                                  ".faa" )
+    [--prot_suffix (STRING)]      The suffix of protein files ( Default ".faa" )
+
 ## Examples
 
 ## License
