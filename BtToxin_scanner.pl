@@ -311,7 +311,7 @@ if ($opt_SequenceType eq "nucl") {
 			chdir "../../";
 		}
 	}elsif ($opt_platform eq "hybrid") {
-		system("pgcgap --Assemble --platform hybrid --ReadsPath $opt_SeqPath --short1 $opt_short1 --short2 $opt_short2 --long $opt_long --threads $opt_threads");
+		system("pgcgap --Assemble --platform hybrid --ReadsPath $opt_SeqPath --short1 $opt_short1 --short2 $opt_short2 --long $opt_long --hout $opt_hout --threads $opt_threads");
 		if (! $opt_assemble_only) {
 			my @scaf = glob("Results/Assembles/Hybrid/*.fasta");
 			foreach  (@scaf) {
