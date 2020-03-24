@@ -47,6 +47,9 @@ conda install BtToxin_scanner
 ```
 
 ## Usage
+```
+BtToxin_scanner [Options]
+```
 
 Options:
 
