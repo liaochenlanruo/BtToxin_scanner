@@ -1,6 +1,7 @@
 # BtToxin_scanner version 2
 
 ## Contents
+
 - [Introduction](#introduction)
 
 - [Installation](#installation)
@@ -55,8 +56,7 @@ Options:
 
     [--reads2 (STRING)]           [Required by "reads"] The suffix name of reads 2( not required by "oxford" and "pacbio". For example: if the name of reads 2 is "YBT-1520_2.fq", the suffix name should be _2.fq" )
 
-    [--suffix_len (INT)]          [Required by "reads"] (Strongly recommended) The suffix length of the reads file, that is the length of the reads name minus the length of the strain name. For example the --suffix_len of
-                                  "YBT-1520_L1_I050.R1.clean.fastq.gz" is 26 ( "YBT-1520" is the strain name ) ( Default 0 )
+    [--suffix_len (INT)]          [Required by "reads"] (Strongly recommended) The suffix length of the reads file, that is the length of the reads name minus the length of the strain name. For example the --suffix_len of "YBT-1520_L1_I050.R1.clean.fastq.gz" is 26 ( "YBT-1520" is the strain name ) ( Default 0 )
 
     [--short1 (STRING)]           [Required] FASTQ file of first short reads in each pair. Needed by hybrid assembly ( Default Unset )
 
@@ -76,13 +76,36 @@ Options:
 
 ## Examples
 
+- Processing Illumina paired-end Reads
+```
+BtToxin_scanner --SeqPath <Illumina Reads PATH> --SequenceType reads --platform illumina --reads1 <suffix name of reads 1> -reads2 <suffix name of reads 2> --threads <INT> --suffix_len <INT>
+```
+
+- Processing assembled genomes
+```
+BtToxin_scanner --SeqPath <Assembled genome PATH> --SequenceType nucl --Scaf_suffix <suffix of genomes> --threads <INT>
+```
+
+- Processing protein sequences
+```
+BtToxin_scanner --SeqPath <Protein file PATH> --SequenceType prot --prot_suffix <suffix of protein files> --threads <INT>
+```
+
+- Processing orfs sequences
+```
+BtToxin_scanner --SeqPath <orfs file PATH> --SequenceType orfs --orfs_suffix <suffix of orfs files> --threads <INT>
+```
+
 ## License
+
 BtToxin_scanner is free software, licensed under [GPLv3](https://github.com/liaochenlanruo/Bt_toxin_scanner/blob/master/LICENSE).
 
 ## Feedback/Issues
+
 Please report any issues about usage of the software to the [issues page](https://github.com/liaochenlanruo/Bt_toxin_scanner/issues).
 
 ## Citation
+
 If you use this software please cite:
 
 ## FAQs
