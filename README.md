@@ -26,7 +26,7 @@
 
 ## Introduction
 
-This is an upgraded version of [BtToxin_scanner](http://bcam.hzau.edu.cn/BtToxin_scanner/), which can be used for mining Bt toxins, such as Cry, Cyt and Vip toxins.
+This is an upgraded version of [BtToxin_scanner](http://bcam.hzau.edu.cn/BtToxin_scanner/), which can be used for mining _Bacillus thuringiensis_ toxins, such as Cry, Cyt and Vip toxins.
 
 
 ## Installation
