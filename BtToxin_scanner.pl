@@ -5,7 +5,10 @@ use warnings;
 use File::Tee qw(tee);
 use Pod::Usage;
 use Getopt::Long;
+use Cwd;
 
+
+my $working_dir = getcwd;
 my %options;
 
 =over 30
@@ -168,13 +171,13 @@ $options{'long=s'} = \(my $opt_long);
 
 =item B<[--hout (STRING)]>
 
-I<[Required]> Output directory for hybrid assembly ( Default ../../Results/Assembles/Hybrid )
+I<[Required]> Output directory for hybrid assembly ( Default ./Results/Assembles/Hybrid )
 
 =back
 
 =cut
 
-$options{'hout=s'} = \(my $opt_hout = '../../Results/Assembles/Hybrid');
+$options{'hout=s'} = \(my $opt_hout = "$working_dir/Results/Assembles/Hybrid");
 
 =over 30
 
@@ -312,10 +315,12 @@ if ($opt_SequenceType eq "nucl") {
 		}
 	}elsif ($opt_platform eq "hybrid") {
 		system("pgcgap --Assemble --platform hybrid --ReadsPath $opt_SeqPath --short1 $opt_short1 --short2 $opt_short2 --long $opt_long --hout $opt_hout --threads $opt_threads");
+		print $opt_hout . "\n";
 		if (! $opt_assemble_only) {
-			my @scaf = glob("Results/Assembles/Hybrid/*.fasta");
+			my @scaf = glob("$opt_hout/*.fasta");
 			foreach  (@scaf) {
-				$_=~/Results\/Assembles\/Hybrid\/(\S+).fasta/;
+				$_=~/.+\/(\S+).fasta/;
+				#$_=~/Results\/Assembles\/Hybrid\/(\S+).fasta/;
 				my $out = $1;
 				system("coreprocess.pl $_ $out nucl");
 			}
