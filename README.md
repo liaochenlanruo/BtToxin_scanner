@@ -26,13 +26,14 @@ This is an upgraded version of [BtToxin_scanner](http://bcam.hzau.edu.cn/BtToxin
 ## Installation
 
 - Required dependencies
- - [BioPerl](http://metacpan.org/pod/BioPerl)
- - [hammer]()
- - [libsvm]()
- - [NCBI-blast+](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
- - [Perl](http://www.perl.org/get.html)
- - [PGCGAP]()
-- Bioconda - OSX/Linux/WSL
+  - [BioPerl](http://metacpan.org/pod/BioPerl)
+  - [HMMER](https://www.ebi.ac.uk/Tools/hmmer/)
+  - [libsvm](https://github.com/cjlin1/libsvm)
+  - [NCBI-blast+](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
+  - [Perl](http://www.perl.org/get.html)
+  - [PGCGAP](https://liaochenlanruo.hzaubmb.org/pgcgap/)
+
+- Install with Bioconda - OSX/Linux/WSL
 
 ## Usage
 
