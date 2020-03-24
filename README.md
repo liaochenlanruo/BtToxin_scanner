@@ -1,6 +1,21 @@
 # BtToxin_scanner version 2
 
 ## Contents
+- [Introduction](#introduction)
+
+- [Installation](#installation)
+
+- [Usage](#usage)
+
+- [Examples](#examples)
+
+- [License](#license)
+
+- [Feedback](#feedback)
+
+- [Citation](#citation)
+
+- [FAQs](#faqs)
 
 ### Introduction
 
@@ -13,6 +28,8 @@ This is an upgraded version of [BtToxin_scanner](http://bcam.hzau.edu.cn/BtToxin
 - Bioconda - OSX/Linux/WSL
 
 ### Usage
+
+### Examples
 
 ### License
 
