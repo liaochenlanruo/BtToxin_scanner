@@ -1,8 +1,8 @@
 # BtToxin_scanner version 2
 
 ![Platform](https://badgen.net/badge/platform/WSL,Linux,macOS?list=|)
-![License](https://badgen.net/github/license/liaochenlanruo/Bt_toxin_scanner)
-[![GitHubversion](https://badge.fury.io/gh/liaochenlanruo%2FBt_toxin_scanner.svg)](https://badge.fury.io/gh/liaochenlanruo%2FBt_toxin_scanner)
+![License](https://badgen.net/github/license/liaochenlanruo/BtToxin_scanner)
+[![GitHubversion](https://badge.fury.io/gh/liaochenlanruo%2FBtToxin_scanner.svg)](https://badge.fury.io/gh/liaochenlanruo%2FBtToxin_scanner)
 ![Downloads conda](https://img.shields.io/conda/dn/bioconda/BtToxin_scanner.svg?style=flat)
 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/BtToxin_scanner/README.html)
 
