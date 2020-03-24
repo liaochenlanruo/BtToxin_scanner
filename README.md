@@ -1,5 +1,11 @@
 # BtToxin_scanner version 2
 
+![Platform](https://badgen.net/badge/platform/WSL,Linux,macOS?list=|)
+![License](https://badgen.net/github/license/liaochenlanruo/BtToxin_scanner)
+[![GitHubversion](https://badge.fury.io/gh/liaochenlanruo%2FBtToxin_scanner.svg)](https://badge.fury.io/gh/liaochenlanruo%2FBtToxin_scanner)
+![Downloads conda](https://img.shields.io/conda/dn/bioconda/BtToxin_scanner.svg?style=flat)
+[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/BtToxin_scanner/README.html)
+
 ## Contents
 
 - [Introduction](#introduction)
@@ -34,6 +40,11 @@ This is an upgraded version of [BtToxin_scanner](http://bcam.hzau.edu.cn/BtToxin
   - [PGCGAP](https://liaochenlanruo.hzaubmb.org/pgcgap/)
 
 - Install with Bioconda - OSX/Linux/WSL
+```
+conda create -n toxin python=3
+conda activate toxin
+conda install BtToxin_scanner
+```
 
 ## Usage
 
@@ -82,6 +93,21 @@ Options:
 BtToxin_scanner --SeqPath <Illumina Reads PATH> --SequenceType reads --platform illumina --reads1 <suffix name of reads 1> -reads2 <suffix name of reads 2> --threads <INT> --suffix_len <INT>
 ```
 
+- Processing PacBio long Reads
+```
+BtToxin_scanner --SeqPath <PacBio Reads PATH> --SequenceType reads --platform pacbio --reads1 <suffix name of PacBio reads> --threads <INT> --suffix_len <INT>
+```
+
+- Processing Oxford long Reads
+```
+BtToxin_scanner --SeqPath <Oxford Reads PATH> --SequenceType reads --platform oxford --reads1 <suffix name of Oxford reads> --threads <INT> --suffix_len <INT>
+```
+
+- Processing Hybrid Reads (Long reads + illumina short reads)
+```
+BtToxin_scanner --SeqPath <Reads PATH> --SequenceType reads --platform hybrid --short1 <short reads 1> --short2 <short reads 2> --long <long reads> --threads <INT>
+```
+
 - Processing assembled genomes
 ```
 BtToxin_scanner --SeqPath <Assembled genome PATH> --SequenceType nucl --Scaf_suffix <suffix of genomes> --threads <INT>
@@ -110,5 +136,3 @@ Please report any issues about usage of the software to the [issues page](https:
 If you use this software please cite:
 
 ## FAQs
-
-
