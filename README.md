@@ -36,34 +36,22 @@ This is an upgraded version of [BtToxin_scanner](http://bcam.hzau.edu.cn/BtToxin
 ## Usage
 
 Options:
+
     [--help]                      Print the help message and exit
 
-    [--version]                   Show version number of BtToxin_scanner and
-                                  exit
+    [--version]                   Show version number of BtToxin_scanner and exit
 
     [--threads (INT)]             Number of threads to be used ( Default 4 )
 
-    [--SeqPath (PATH)]            [Required] The path of input sequences (
-                                  Default "the current directory" )
+    [--SeqPath (PATH)]            [Required] The path of input sequences ( Default "the current directory" )
 
-    [--SequenceType (STRING)]     [Required] Sequence type for inputs.
-                                  "reads", "nucl", "orfs", and "prot"
-                                  avaliable ( Default nucl )
+    [--SequenceType (STRING)]     [Required] Sequence type for inputs. "reads", "nucl", "orfs", and "prot" avaliable ( Default nucl )
 
-    [--platform (STRING)]         [Required] Sequencing Platform,
-                                  "illumina", "pacbio", "oxford" and
-                                  "hybrid" available ( Default illumina )
+    [--platform (STRING)]         [Required] Sequencing Platform, "illumina", "pacbio", "oxford" and "hybrid" available ( Default illumina )
 
-    [--assemble_only (STRING)]    Only perform genome assembly without
-                                  predicting toxins.
+    [--assemble_only (STRING)]    Only perform genome assembly without predicting toxins.
 
-    [--reads1 (STRING)]           [Required by "reads"] The suffix name of
-                                  reads 1 ( for example: if the name of
-                                  reads 1 is
-                                  "YBT-1520_L1_I050.R1.clean.fastq.gz",
-                                  "YBT-1520" is the strain same, so the
-                                  suffix name should be ".R1.clean.fastq.gz"
-                                  )
+    [--reads1 (STRING)]           [Required by "reads"] The suffix name of reads 1 ( for example: if the name of reads 1 is "YBT-1520_L1_I050.R1.clean.fastq.gz", "YBT-1520" is the strain same, so the suffix name should be ".R1.clean.fastq.gz" )
 
     [--reads2 (STRING)]           [Required by "reads"] The suffix name of
                                   reads 2( not required by "oxford" and
