@@ -24,6 +24,8 @@
 
 - [FAQs](#faqs)
 
+- [Updates](#updates)
+
 ## Introduction
 
 This is an upgraded version of [BtToxin_scanner](http://bcam.hzau.edu.cn/BtToxin_scanner/), which can be used for mining _Bacillus thuringiensis_ toxins, such as Cry, Cyt and Vip toxins.
@@ -139,3 +141,9 @@ Please report any issues about usage of the software to the [issues page](https:
 If you use this software please cite:
 
 ## FAQs
+
+## Updates
+
+- v2.0.2
+  - Added a pre-formatting step for assembled genomes to aviod the program crash
+  - Added USAGE informations to the help
