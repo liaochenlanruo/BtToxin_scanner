@@ -1,4 +1,4 @@
-# BtToxin_scanner version 2
+# High-throughput _Bacillus thuringiensis_ toxin mining pipeline
 
 ![Platform](https://badgen.net/badge/platform/WSL,Linux,macOS?list=|)
 ![License](https://badgen.net/github/license/liaochenlanruo/BtToxin_scanner)
@@ -28,8 +28,7 @@
 
 ## Introduction
 
-This is an upgraded version of [BtToxin_scanner](http://bcam.hzau.edu.cn/BtToxin_scanner/), which can be used for mining _Bacillus thuringiensis_ toxins, such as Cry, Cyt and Vip toxins.
-
+This is an upgraded version of [BtToxin_scanner](http://bcam.hzau.edu.cn/BtToxin_scanner/), a high-throughput, automatic gene mining tool that can mine toxin genes, such as Cry, Cyt and Vip toxins, from _Bacillus thuringiensis_. The pipeline accepts multiple forms of input data including Reads, assembled genomes, ORFs, and protein sequences and can output rich and useful results.
 
 ## Installation
 
